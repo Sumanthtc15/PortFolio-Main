@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta property="og:title" content="Visit My Portfolio" />
+  <meta property="og:description" content="Java • Web • Projects • Full Stack" />
+  <meta property="og:image" content="https://dummyimage.com/600x400/ffffff/000000&text=Visit+My+Portfolio" />
+  <title>Sumanth's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Hamburger Button */
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        background: #f3f3f3;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+      }
+
+      .container {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Sumanth's Portfolio</div>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+      <nav id="navbar">
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Remaining Sections from your HTML stay the same... -->
+   <section class="hero" id="home">
+  <div class="hero-content">
+    <h1>WELCOME💻❤️</h1>
+    <p>"WELCOME ❤️ — A passionate developer who turns designs into powerful digital solutions."</p>
+    
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-left">
+      <img src="Gemini_Generated_Image_oc1sjnoc1sjnoc1s.png" alt="Profile Photo">
+    </div>
+    <div class="about-right">
+      <h2>HELLO, I'M <span class="highlight">SUMANTH</span></h2>
+      <p>
+        Driven<strong> Full Stack Developer</strong> with a passion for building  
+        <span class="powerful">powerful</span>, <span class="scalable">scalable</span>, and 
+        <span class="elegant">elegant</span> digital solutions that merge performance with elegance...
+      </p>
+      <p>
+        Whether I'm designing<span class="highlight-text"> beautiful user interfaces</span> or engineering robust,
+        <span class="highlight-text">efficient systems</span>,I'm committed to delivering solutions that dont't just meet expectations->>they surpass them.
+      </p>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <i class="icon">👤</i>
+          <h4>Name</h4>
+          <p><strong>SUMANTH T C</strong></p>
+        </div>
+        <div class="info-box">
+          <i class="icon">💼</i>
+          <h4>EDUCATION</h4>
+          <p><strong>BE IN ISE</strong></p>
+        </div>
+        <div class="info-box">
+          <i class="icon">📧</i>
+          <h4>Email</h4>
+          <p><strong>sumanthtc15@gmail.com</strong></p>
+        </div>
+        <div class="info-box">
+          <i class="icon">📍</i>
+          <h4>Location</h4>
+          <p><strong>Bangalore, India</strong></p>
+        </div>
+      </div>
+
+      <a href="#projects" class="explore-btn">Explore My Work</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+  <div class="project-container">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-header">Full-Stack Web App</div>
+      <h3>Student Result Management System</h3>
+      <p>A web-based application that manages student academic records, including marks entry, grade calculation, and result display. Built with a responsive and interactive interface for both admins and students..</p>
+      <p><strong>Tech Stack:</strong></p>
+      <div class="tech-stack">
+        <span class="badge html">HTML</span>
+        <span class="badge css">CSS</span>
+        <span class="badge js">JavaScript</span>
+        <span class="badge react">React.js</span>
+        <!-- <span class="badge node">Node.js</span> -->
+        <span class="badge mongo">MYSQL</span>
+        <span class="badge express">Express</span>
+        <span class="badge api">REST API</span>
+        <span class="badge bootstrap">Bootstrap</span>
+        <span class="badge tailwind">Tailwind CSS</span>
+      </div>
+      <a href="https://github.com/Sumanthtc15/DBMS-Project" class="btn">Github Repository</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-header">Weather App using API</div>
+      <h3>Weather App</h3>
+      <p>A responsive weather forecast application that fetches real-time weather data using the OpenWeatherMap API. Built with JavaScript to dynamically display weather based on user input..</p>
+      <p><strong>Tech Stack:</strong></p>
+      <div class="tech-stack">
+        <span class="badge html">HTML</span>
+        <span class="badge css">CSS</span>
+        <span class="badge js">JavaScript</span>
+        <span class="badge bootstrap">Bootstrap</span>
+        <span class="badge tailwind">Tailwind CSS</span>
+      </div>
+      <a href="https://github.com/Sumanthtc15/Weather-App-" class="btn">Github Repository</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-header">Front End WEBAPP</div>
+      <h3>Cara – E-Commerce Website</h3>
+      <p>An elegant and responsive e-commerce website designed for showcasing and browsing products. Cara provides a smooth user experience with modern styling and mobile compatibility..</p>
+      <p><strong>Tech Stack:</strong></p>
+      <div class="tech-stack">
+        <span class="badge html">HTML</span>
+        <span class="badge css">CSS</span>
+        <span class="badge js">JavaScript</span>
+        <span class="badge bootstrap">Bootstrap</span>
+        <span class="badge tailwind">Tailwind CSS</span>
+      </div>
+      <a href="https://github.com/Sumanthtc15/Cara-E-Commerce-Website" class="btn">Github Repository</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="skills" id="skills">
+  <h2>My Skills</h2>
+  <div class="skills-grid">
+
+    <!-- Skill 1 -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" class="skill-icon">
+      <h3>HTML</h3>
+      <p>HyperText Markup Language, the backbone of web development.</p>
+      <span class="badge red">HTML5</span>
+    </div>
+
+    <!-- Skill 2 -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" class="skill-icon">
+      <h3>CSS</h3>
+      <p>Cascading Style Sheets for designing and styling web pages.</p>
+      <span class="badge blue">CSS3</span>
+    </div>
+
+    <!-- Skill 3 -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon">
+      <h3>JavaScript</h3>
+      <p>Programming language for creating dynamic and interactive web content.</p>
+      <span class="badge yellow">ES6+</span>
+    </div>
+
+    <!-- Skill 4 -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="skill-icon">
+      <h3>React.js</h3>
+      <p>A JavaScript library for building user interfaces.</p>
+      <span class="badge cyan">React</span>
+    </div>
+
+    <!-- Skill 5 -->
+    <div class="skill-card">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/free-java-logo-icon-download-in-svg-png-gif-file-formats--wordmark-programming-language-pack-logos-icons-1174953.png?f=webp" alt="Java" class="skill-icon">
+      <h3>Java</h3>
+      <p>a robust and versatile programming language used for building secure, scalable, and cross-platform applications.</p>
+      <span class="badge green">JAVA</span>
+    </div>
+
+    <!-- Skill 6 -->
+    <div class="skill-card">
+      <img src="https://media.licdn.com/dms/image/v2/D4E12AQFZk_BOEXMuxw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1711355118921?e=2147483647&v=beta&t=0dn89z7vhHg_yojXucqZc86hRlZl6fXb2gUTPaCZSNY" alt="MYSQL" class="skill-icon">
+      <h3>MYSQL</h3>
+      <p>A powerful relational database system for storing, managing, and retrieving structured data efficiently..</p>
+      <span class="badge dark">MYSQL</span>
+    </div>
+
+    <!-- Skill 7 -->
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="skill-icon">
+      <h3>Bootstrap</h3>
+      <p>Front-end framework for designing responsive and mobile-first websites.</p>
+      <span class="badge blue">Bootstrap</span>
+    </div>
+
+    <!-- Skill 8 -->
+    <!-- <div class="skill-card">
+      <img src="https://img.icons8.com/ios-filled/50/ffbf00/api.png" alt="API" class="skill-icon">
+      <h3>REST API</h3>
+      <p>Architectural style for designing networked applications.</p>
+      <span class="badge yellow">RESTful</span>
+    </div> -->
+
+    <!-- Skill 9 -->
+    <div class="skill-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvRyJHpohhanRY3WXX-OYgfeHg84ncR4YMYg&s" alt="Tailwind CSS" class="skill-icon">
+      <h3>Tailwind CSS</h3>
+      <p>Utility-first CSS framework for creating custom designs quickly.</p>
+      <span class="badge cyan">Tailwind</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="certificates" id="certificates">
+  <h2>📜 Certificates</h2>
+  <div class="certificate-container">
+
+    <div class="certificate-card">
+      <h3>Java Full Stack Internship</h3>
+      <p>Issued by: Dyashin TechnoSoft Pvt Ltd</p>
+      <a href="1.html" >View Certificate</a>
+    </div>
+
+    <div class="certificate-card">
+      <h3>Full Stack Development</h3>
+      <p>Issued by: Varcons Technologies Pvt Ltd</p>
+      <a href="2.html" >View Certificate</a>
+    </div>
+     <div class="certificate-card">
+      <h3>Flutter Development</h3>
+      <p>Issued by: Rapsol Technologies</p>
+      <a href="3.html" >View Certificate</a>
+    </div>
+    <div class="certificate-card">
+      <h3>Paper Presentation-ICEEMST-2024</h3>
+      <p>Issued by: SIES(Nerul) College of Arts, Science and Commerce (Autonomous)</p>
+      <a href="4.html">View Certificate</a>
+    </div>
+     <div class="certificate-card">
+      <h3>Web Programming And Internet Applications Workshop</h3>
+      <p>Issued by: Don Bosco Institute Of Technology</p>
+      <a href="5.html">View Certificate</a>
+    </div>
+
+
+
+  </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>ABOUT ME</h3>
+      <p>A passionate 
+         Full Stack Developer, crafting powerful,<br>
+         scalable, and elegant digital solutions.</p>
+    </div>
+
+    <div class="footer-col">
+      <h3>QUICK LINKS</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h3>GET IN TOUCH</h3>
+      <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:sumanthtc15@gmail.com">sumanthtc15@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> +91 6362256467</p>
+    </div>
+
+    
+
+  <div class="footer-bottom">
+    <p>© 2024 Sumanth's Portfolio | Designed by SUMANTH T C</p>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navbar = document.getElementById('navbar');
+
+    hamburger.addEventListener('click', () => {
+      navbar.classList.toggle('active');
+    });
+
+    // Close navbar on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

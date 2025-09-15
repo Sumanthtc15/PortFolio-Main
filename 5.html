@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Workshop Certificate Display</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8f0f8;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .certificate-card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 90%;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+    }
+
+    .certificate-image {
+      width: 100%;
+      max-height: 500px; /* Good height control */
+      object-fit: contain;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+      padding: 20px 26px;
+    }
+
+    .certificate-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .description strong {
+      color: #222;
+    }
+
+    .description em {
+      color: #000;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .certificate-image {
+        max-height: 300px;
+      }
+
+      .certificate-title {
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate-card">
+    <img src="IMG_7445.JPG" alt="Web Programming Workshop Certificate" class="certificate-image" />
+    <div class="content">
+      <div class="certificate-title">Workshop Participation Certificate</div>
+      <div class="description">
+        Participated in a <strong>4-day workshop</strong> on <em>Web Programming and Building Internet Applications</em> organized by the 
+        <strong>Department of Information Science and Engineering, Don Bosco Institute of Technology</strong>, Bengaluru, held on 
+        <strong>28th July & 3rd to 5th August 2023</strong>.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

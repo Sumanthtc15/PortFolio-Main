@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Varcons Internship Certificate</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e8f0f8;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .certificate-card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 90%;
+      max-width: 900px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .certificate-card:hover {
+      transform: scale(1.01);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.2);
+    }
+
+    .certificate-image {
+      width: 100%;
+      max-height: 500px;
+      object-fit: contain;
+      display: block;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+      padding: 20px 26px;
+    }
+
+    .certificate-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #2c3e50;
+    }
+
+    .description {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .description strong {
+      color: #222;
+    }
+
+    .description em {
+      color: #000;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .certificate-image {
+        max-height: 300px;
+      }
+
+      .certificate-title {
+        font-size: 20px;
+      }
+
+      .description {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate-card">
+    <img src="Varcons Technologies.JPG" alt="Varcons Full Stack Internship Certificate" class="certificate-image" />
+    <div class="content">
+      <div class="certificate-title">Full Stack Web Development Internship</div>
+      <div class="description">
+        <strong>Sumanth T C</strong> successfully completed the <em>Full Stack Web Development Internship</em> at 
+        <strong>Varcons Technologies Pvt. Ltd</strong> from <strong>27th October 2023 to 1st December 2023</strong>.  
+        He worked on a project titled <em>“Template for Escape Room Game Website”</em>, involving database management, 
+        UI/UX design, and implementation of functional web templates. His performance exceeded expectations and the project 
+        was successfully completed on time.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
